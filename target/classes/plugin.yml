@@ -1,0 +1,39 @@
+name: OpenAudioMc
+version: 2.0
+main: net.openaudiomc.jclient.OpenAudioMc
+authors: [Mindgamesnl, ApocalypsjeNL, Snow]
+description: OpenAudiomc
+softdepend: [WorldGuard]
+api-version: 1.13
+website: https://openaudiomc.net/
+
+commands:
+  audio:
+    aliases: [sound, connect]
+    description: Command to get an url to the webclient
+  oa:
+    aliases: [openaudio, openaudiomc, oamc]
+    description: Main command of OpenAudioMc
+  volume:
+    aliases: [vol]
+    description: Command to change your volume on the fly
+
+permissions:
+  oa.*:
+    default: op
+    description: A openaudio command
+  oa.admin.*:
+    default: op
+    description: A openaudio command
+  oa.admin.play:
+    default: op
+    description: A openaudio command
+  oa.admin.stop:
+    default: op
+    description: A openaudio command
+  oa.admin.region:
+    default: op
+    description: A openaudio command
+  oa.admin.speakers:
+    default: op
+    description: A openaudio command
